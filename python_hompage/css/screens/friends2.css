@@ -1,0 +1,8 @@
+.friends-screen__friends-header {
+  color: rgba(0, 0, 0, 0.5);
+  margin: 10px 0px;
+  padding-top: 10px;
+  border-top: var(--main--border);
+  display: flex;
+  justify-content: space-between;
+}

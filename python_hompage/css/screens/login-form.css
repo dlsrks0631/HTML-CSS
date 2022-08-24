@@ -1,3 +1,6 @@
+.index__background {
+  background-color: black;
+}
 .welcome-header {
   display: flex;
   justify-content: center;
@@ -10,6 +13,7 @@
 .welcome-header__title {
   margin-bottom: 20px;
   font-size: 25px;
+  font-weight: bold;
 }
 
 .welcome-header__text {

@@ -1,0 +1,40 @@
+< Basic Terms >
+block -> 같은 선상에 올 수 없음 ex) div
+inline -> in the same line 같은 선상에 옴 ex) span link img 
+       -> 높이와 너비를 가질 수 없음
+margin -> box의 경계로부터 바깥에 있는 공간
+padding -> box의 경계로부터 안에 있는 공간
+box-sizing: border-box -> border의 크기를 width와 height의 값으로 사용할 수 있게 한다
+
+< Flexbox >
+flexbox -> 자식에게 명시하지 않고 부모에게 명시한다
+        -> 바꾸고자하는 직접적인 부모에 명시해야함
+        -> 부모 element를 flex container로 바꾸기. (부모를 display: flex)
+        -> justify-content: 주축 / align-items: 교차축
+        -> body의 height를 바꾸지 않을 경우 align-items 실행되지 않을 것
+        -> flex-direction: column일 시 주축과 교차축이 바뀜 (align-items: 주축 / justify-content: 교차축)
+        -> flex-wrap: nowrap --> 창을 축소 시킬 시 안에 있는 box사이즈도 같이 줄어듬
+        -> flex-wrap: wrap --> 창을 축소 시킬 시 명시된 사이즈를 지키고 안에 있는 box가 다음줄로 넘어감
+
+< Position >
+position: fixed -> 창을 아래로 스크롤해도 고정된 위치
+position: relative -> element가 처음 위치한 곳을 기준으로 수정 (top,bottom,left,right사용)
+position: absolute -> element는 가장 가까운 relative 부모를 기준으로 이동 / relative 부모가 없을 시 body전체를 기준
+
+< Pseudo Selectors >
+div:first-child {} -> 리스트에 있는 div들 중 처음에 있는 것
+div:last-child {} -> 리스트에 있는 div들 중 마지막에 있는 것
+div:nth-child(3) {} -> 리스트에 있는 div들 중 3번 째로 있는 것
+div:nth-child(even/odd/2n/2n+1) {} -> 리스트에 있는 div들 중 (짝수/홀수)번 째로 있는 것
+p span {} -> p안에 있는 span
+p > span {} -> p의 바로 밑 자식 중 span
+p + span {} -> p다음으로 오는 span
+input:required{} -> input이 required 인 것
+
+< Attribute Selectors >
+input[type="password"] {} -> type이 "password"인 input
+input[placeholder~="name"] {} -> placeholder에 "name"이라는 단어를 포함한 모든 input
+
+< States >
+
+

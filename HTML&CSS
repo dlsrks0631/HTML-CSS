@@ -31,10 +31,33 @@ p > span {} -> p의 바로 밑 자식 중 span
 p + span {} -> p다음으로 오는 span
 input:required{} -> input이 required 인 것
 
+< Placeholder/ Selection/ First-letter/ First-line >
+input::placeholder {} -> placeholder을 스타일하고 싶을 때
+p::selection {} -> 드래그했을 때 스타일
+p::first-letter {} -> paragraph에서 첫 단어 스타일
+p::first-line {} -> paragraph에서 첫 문장 스타일
+
 < Attribute Selectors >
 input[type="password"] {} -> type이 "password"인 input
 input[placeholder~="name"] {} -> placeholder에 "name"이라는 단어를 포함한 모든 input
 
 < States >
+button:active {} -> 버튼을 클릭하고 있을 때만
+button:focus {} -> 버튼을 클릭했을 때 지속 / tab키 누르면 다음 focus로 넘어감
+button:hover {} -> 클릭하는 것이 아닌 마우스 커서가 대상 위에 있을 때
+form:hover input {} -> form에 마우스 커서가 있을 시 input이 변화
+form:hover input:focus {} -> form에 마우스 커서가 있고 input을 클릭했을 때 input이 변화
+a:visited {} -> 링크를 방문하고 난 후
+
+< Variables - Root (ex) >
+:root {
+        --main-color: yellow;
+        --default-border: 1px solid var(--main-color);
+}
+span {
+        background-color: var(--main-color);
+        border: var(--default-border
+} -> document의 뿌리
+
 
 

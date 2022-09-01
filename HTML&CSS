@@ -59,5 +59,78 @@ span {
         border: var(--default-border
 } -> document의 뿌리
 
+< Transitions >
+(ex)
+<a href="#">Go home</a>
+!! transition은 hover이 아닌 !! root에 있어야함 !!
+a {
+        color: wheat;
+        background-color: tomato
+        transition: background-color 10s ease-in-out, color 5s ease-in-out;
+        --> 배경색이 10초에 걸쳐서 변하고 색은 5초에 걸쳐서 변함
+        transition: all 5s ease-in-out;
+        --> 변화하는 모든 것에 변화를 줌
+}
+a:hover {  --> 링크 위에 있으면 변화되는 것
+        color: tomato;
+        background-color: wheat;
+}
+
+< Transformations > --> Transition과 같이 사용
+--> 그 외 transform은 transform mdn 참고
+(ex)
+img {
+        transition: transform 5s ease-in-out;
+}
+
+img:hover {
+        transform: rotateZ(85deg); --> 각도가 바로 변하기만함
+}
+
+< Animations >
+(ex)
+@keyframes 애니메이션이름 {
+        ----첫 번째 방법----> 애니메이션 실행하고 다시 처음으로 돌아가기 때문에 끊김
+        from {
+                transform:rotateX(0);
+        }
+        to { --> transform 혼합가능
+                transform: rotateX(360deg) translateY(100px);
+        }
+        ----두 번째 방법----> 자연스럽게 넘어감
+        0% {
+                transform: rotateY(0);
+        }
+        50% {
+                transform: rotateX(360deg) translateY(100px);
+        }
+        100% {
+                transform: rotateY(0);
+
+        }
+}
+
+img {
+        animation: 애니메이션이름 5s ease-in-out;
+        --> 마우스 움직임 없이 5초동안 애니메이션 실행
+        animation: 애니메이션이름 5s ease-in-out infinite;
+        --> 마우스 움직임 없이 5초동안 애니메이션 실행을 영원히 함
+}
+
+< Media Query >
+--> 오직 CSS만을 이용해서 스크린의 사이즈를 알 수 있는 방법
+--> 그 외는 css media query mdn 참고
+
+(ex)
+--> 스크린 창 넓이가 600px 이하일 경우 배경색 변화
+@media screen and (max-width: 600px) {
+--> 스크린 창 넓이가 500px 이상 600px 이하 일때 변화
+@media screen and (max-width: 600px) and (min-width: 500px) {
+
+        div {
+                background-color: tomato;
+        }
+}
+
 
 

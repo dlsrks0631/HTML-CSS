@@ -1,0 +1,33 @@
+body {
+  background-color: #ff6347;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#biggest__box {
+  height: 400px;
+  width: 400px;
+  background-color: #f5deb3;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.smallest__box {
+  border: 5px solid white;
+  width: 100px;
+  height: 100px;
+  background-color: #008080;
+}
+
+#biggest__box div:nth-child(2) {
+  width: 330px;
+  height: 100px;
+  background-color: #008080;
+  border: 5px dashed white;
+}

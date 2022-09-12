@@ -23,8 +23,8 @@ header h1 {
 }
 
 .big__box {
-  height: 500px;
-  width: 400px;
+  height: 400px;
+  width: 300px;
   position: relative;
   border: 10px solid #f5f5f5;
   margin-bottom: 20px;

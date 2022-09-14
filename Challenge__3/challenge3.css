@@ -1,7 +1,7 @@
 /*옆 빈칸 margin: 30px 20px*/
 
 body {
-  background-color: #00c6ad;
+  background-color: wheat;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -12,10 +12,11 @@ body {
   width: 300px;
   height: 600px;
   background-color: white;
+  border: 4px solid #00c6ad;
 }
 
 #status-bar {
-  margin: 30px 20px;
+  margin: 30px 20px 10px 20px;
   display: flex;
   width: 58%;
   justify-content: space-between;
@@ -28,8 +29,32 @@ body {
 }
 
 #Photo__Title {
-  margin: 30px 20px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  width: 50%;
+}
+
+#Photo__Title__2__Title {
+  margin-bottom: 10px;
+}
+
+#Photo__Title__2__Data {
+  margin-top: 0;
+}
+
+#photo {
+  width: 80px;
+  height: 80px;
+  background-color: #ffbd11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-right: 0px;
+  color: white;
 }
 
 #Photo__Title div:first-child {
@@ -42,17 +67,71 @@ body {
 
 #Play__Heart__Plus {
   display: flex;
-  margin: 30px 20px;
+  margin: 0px 20px 20px 20px;
   justify-content: space-between;
 }
 
 .Box {
   display: flex;
-  margin: 30px 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
+
 .Box__1 {
   background-color: #f85a2a;
   width: 50px;
   height: 50px;
   margin-right: 20px;
+  border: 2px solid black;
+  border-radius: 14%;
+}
+
+.Box:nth-child(2) .Box__1 {
+  background-color: #ff89bb;
+}
+
+.Box:nth-child(3) .Box__1 {
+  background-color: #1847e5;
+}
+
+.Box:nth-child(4) .Box__1 {
+  background-color: #00c6ad;
+}
+
+.Box__2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Box__2__1 {
+  font-size: 20px;
+}
+.Box__2__2 {
+  font-size: 13px;
+  opacity: 0.7;
+}
+#Play {
+  border: 2px solid black;
+  border-radius: 14%;
+  padding: 7px;
+  border-bottom-width: 5px;
+}
+
+#Heart {
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 7px;
+  border-bottom-width: 5px;
+}
+
+#Plus {
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 7px;
+  border-bottom-width: 5px;
+}
+
+#Play i {
+  color: black;
 }

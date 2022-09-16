@@ -19,6 +19,10 @@ body {
   border-radius: 50px;
 }
 
+.title h4 {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .shuffle {
   display: flex;
   justify-content: space-around;
@@ -192,7 +196,7 @@ body {
 
 .section__2__play i:first-child,
 .section__2__play i:last-child {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .section__2__play i:nth-child(3) {

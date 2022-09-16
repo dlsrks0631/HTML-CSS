@@ -14,9 +14,69 @@ body {
 .section__2 {
   background-color: white;
   width: 400px;
-  height: 700px;
-  box-shadow: 12px 12px 12px 12px rgba(0, 0, 0, 0.5);
+  height: 735px;
+  box-shadow: 0px 0px 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
+}
+
+.shuffle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.shuffle__div:first-child {
+  height: 40px;
+  width: 130px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shuffle__div:nth-child(2) {
+  height: 40px;
+  width: 130px;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+.shuffle__div:nth-child(2) i {
+  margin-right: 10px;
+}
+
+.black {
+  background-color: black;
+  color: white;
+  width: 80%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+.black__div {
+  text-align: center;
+}
+
+.black__div h4 {
+  margin-bottom: 0;
+  font-size: 12px;
+  opacity: 0.4;
+}
+
+.black__div h5 {
+  margin-top: 0;
 }
 
 .status-bar {
@@ -28,18 +88,21 @@ body {
 
 .photo {
   text-align: center;
+  margin-top: 0px;
 }
 
 .photo img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  box-shadow: 0 5px 30px 3px #fec9a5;
 }
 
 .title {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 0;
 }
 
 .title h2 {
@@ -47,21 +110,26 @@ body {
 }
 .title h4 {
   margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .music {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: none;
   border-radius: 10px;
-  margin: 0px 15px;
-  margin-bottom: 15px;
+  margin: 0px 10px;
+}
+
+.musics .music:nth-child(2) {
+  box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.2);
 }
 
 .music img {
   width: 50px;
   height: 50px;
+  border-radius: 15px;
 }
 
 .music__data h3 {
@@ -82,10 +150,16 @@ body {
 
 .section__2__img img {
   border-radius: 20px;
+  box-shadow: 0 10px 30px 10px #fec9a5;
 }
 
 .section__2__data {
+  margin-top: 50px;
   text-align: center;
+}
+
+.section__2__data h4 {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .section__2__range {
@@ -98,8 +172,15 @@ body {
   align-items: center;
   padding: 0px 40px;
 }
+
+.section__2__range__spans span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
 .section__2__range input {
   width: 330px;
+  accent-color: black;
 }
 
 .section__2__play {
@@ -107,4 +188,13 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.section__2__play i:first-child,
+.section__2__play i:last-child {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.section__2__play i:nth-child(3) {
+  font-size: 50px;
 }

@@ -9,6 +9,10 @@
   background-color: var(--green);
 }
 
+.nav i:hover {
+  color: var(--yellow);
+}
+
 .nav__list {
   display: flex;
   justify-content: space-between;

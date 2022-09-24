@@ -132,5 +132,15 @@ img {
         }
 }
 
+< 박스 안에 이미지 삽입 >
+
+(ex)
+-- html --
+<div class = "cover"></div>
+
+-- css --
+background-image: url("이미지 주소");
+background-size: cover; --> 이미지를 꽉차게 함
+background-position: center; --> 이미지의 위치를 가운데로
 
 
